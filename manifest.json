@@ -1,7 +1,7 @@
 {
 	"id": "point-N-click",
 	"name": "Point & Click",
-	"version": "1.1.0",
+	"version": "1.1.2",
 	"minAppVersion": "0.15.0",
 	"description": "Allows the ability to switch between Reading view & Live/source preview by double clicking the white-space.",
 	"author": "Michael Radke",

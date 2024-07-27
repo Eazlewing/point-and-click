@@ -1,14 +1,28 @@
-import {Plugin, MarkdownView, WorkspaceLeaf} from 'obsidian'
+import { Plugin, MarkdownView, WorkspaceLeaf } from 'obsidian';
 
-export default class PointAndClick extends Plugin {
-	async onload() {
-		console.log('Loaded & Ready')
-        this.registerDomEvent(document, 'dblclick', (evt: MouseEvent) => {
-            const target = evt.target as HTMLElement;
-            if (this.isWhiteSpace(target)) {
-                this.toggleView();
-            }
-        });
+export default class DoubleClickViewSwitchPlugin extends Plugin {
+    private lastTap: number = 0;
+    private tapTimeout: number = 300; // milliseconds
+
+    async onload() {
+        this.registerDomEvent(document, 'dblclick', this.handleInteraction.bind(this));
+        this.registerDomEvent(document, 'touchend', this.handleTouchEnd.bind(this));
+    }
+
+    handleInteraction(evt: MouseEvent | TouchEvent) {
+        const target = evt.target as HTMLElement;
+        if (this.isWhiteSpace(target)) {
+            this.toggleView();
+        }
+    }
+
+    handleTouchEnd(evt: TouchEvent) {
+        const currentTime = new Date().getTime();
+        const tapLength = currentTime - this.lastTap;
+        if (tapLength < this.tapTimeout && tapLength > 0) {
+            this.handleInteraction(evt);
+        }
+        this.lastTap = currentTime;
     }
 
     isWhiteSpace(element: HTMLElement): boolean {

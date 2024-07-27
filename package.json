@@ -1,7 +1,7 @@
 {
 	"name": "obsidian-sample-plugin",
-	"version": "1.1.0",
-	"description": "Double click the white space of your note to change from live-preview & reading view",
+	"version": "1.1.2",
+	"description": "Double click or tap the white space of your note to change from live-preview & reading view",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
