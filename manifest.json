@@ -1,11 +1,11 @@
 {
-	"id": "point-N-click",
-	"name": "Point & Click",
+	"id": "point-and-click",
+	"name": "Point and Click",
 	"version": "1.5.0",
 	"minAppVersion": "0.15.0",
-	"description": "Allows the ability to switch between Reading view & Live/source preview by double clicking the white-space.",
+	"description": "This plugin allows you to switch between Reading View and Live Preview by double-clicking in the white space of a note.",
 	"author": "Michael Radke",
-	"authorUrl": "www.michaelradke.site/",
+	"authorUrl": "https://michaelradke.wixstudio.io/thestoryteller",
 	"fundingUrl": "Coming Soon",
 	"isDesktopOnly": false
 }

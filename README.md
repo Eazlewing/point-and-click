@@ -6,7 +6,7 @@ This plugin allows you to switch between Reading View and Live Preview by double
 
 1. Install the plugin
 2. Open a note in Obsidian
-3. Double-click in the white space to switch between Reading View and Live Preview
+3. Double-click in the white space to switch between Reading & Editing.
 
 ## Installation
 
