@@ -25,7 +25,8 @@ This plugin allows you to switch between Reading View and Live Preview by double
 
 ## Support
 
-If you encounter any issues or have feature requests, please file them in the GitHub issues page.
+Project workds for me.
+Take it and develop it further if you want, I'd love to see what you can do with it.
 
 ## License
 
