@@ -22,5 +22,5 @@ Take it and develop it further if you want, I'd love to see what you can do with
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License? Or open source. Use it, change it, just credit me.
 ```
